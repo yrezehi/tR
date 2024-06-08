@@ -14,3 +14,5 @@ llm = Ollama(model="qwen:0.5b", request_timeout=120.0)
 
 # initialize ReAct agent
 agent = ReActAgent.from_tools(tools, llm=llm, verbose=True)
+
+agent.chat("What is 2123 * 215123")
